@@ -1,0 +1,6 @@
+<b><%= user.name %> updated</b> <a href="https://jira.sberned.ru/browse/<%= issue.project.key %>"><%= issue.project.name %></a> / <%= issue.fields.issuetype.name %> - <a href="https://jira.sberned.ru/browse/<%= issue.key %>"><%= issue.key %></a>
+<a href="https://jira.sberned.ru/browse/<%= issue.key %>"><%= issue.fields.summary %></a>
+
+-
+Assignee: <%= issue.fields.assignee && issue.fields.assignee.name || 'none' %>
+Priority: <%= issue.fields.priority && issue.fields.priority.name || 'none' %>

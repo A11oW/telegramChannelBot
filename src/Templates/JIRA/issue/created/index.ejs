@@ -1,0 +1,16 @@
+<%
+var browseURL = "https://jira.sberned.ru/browse/";
+var component = (
+        issue.fields.components && issue.fields.components.length && _.map(issue.fields.components, function (item) {
+            return item.name;
+        }) || [':( empty']
+);
+%>
+<b><%= user.name %> created</b> <a href="https://jira.sberned.ru/browse/<%= issue.key %>"><%=
+    issue.key %></a>
+Components: <%= component.join(', ') %>;
+<a href="<%= browseURL %> <%= issue.fields.project.key %>"><%= issue.fields.project.name
+    %></a> / <%= issue.fields.issuetype && issue.fields.issuetype.name || '' %>
+<a href="<%= browseURL %> <%= issue.key %>"><%= issue.fields.summary %></a>
+-
+Assignee: <%= issue.fields.assignee && issue.fields.assignee.name || 'none' %> | Priority: <%= issue.fields.priority && issue.fields.priority.name || 'none' %>

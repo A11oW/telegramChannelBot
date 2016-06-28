@@ -1,0 +1,5 @@
+.idea
+errorLogBot.iml
+node_modules
+*.log
+build

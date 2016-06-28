@@ -1,0 +1,30 @@
+{
+  "name": "sbernedTelegramErrorBot",
+  "version": "1.0.0",
+  "description": "Sberbank Real Estate JIRA telegram bot",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "DEBUG=app:* nodemon --exec babel-node src/index.js",
+    "build": "npm run clean && babel src --out-dir build && cp -r src/Templates build/Templates",
+    "start": "node build/index.js"
+  },
+  "author": "Alexander Malyshev <toca@inbox.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "body-parser": "^1.15.1",
+    "debug": "^2.2.0",
+    "eslint": "^2.10.2",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.0",
+    "eslint-plugin-jsx-a11y": "^1.2.2",
+    "eslint-plugin-react": "^5.1.1",
+    "express": "^4.13.4",
+    "fs-promise": "^0.5.0",
+    "lodash": "^4.13.1",
+    "node-telegram-bot-api": "^0.21.1"
+  }
+}
