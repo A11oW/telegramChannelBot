@@ -2,6 +2,12 @@
 
 ### Telegram bot that sends a message to the channel when fires webhook in JIRA or BitBucket(feature).
 
+### Roadmap
+
+* Create telegram bot by [BotFather](https://telegram.me/botfather)
+* Config app in ```src/config/index.js```
+* Set webhook in JIRA to app bot route (for example ```/api/v1/route/messages```)
+
 ### TODO:
 
 * Add templates to few [events of JIRA](https://developer.atlassian.com/static/connect/docs/latest/modules/common/webhook.html):
