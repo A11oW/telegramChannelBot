@@ -16,6 +16,7 @@
 * Add templates to few events of bitbucket 
     * Create Pull Request
     * Create comment to Pull Request
-    
+* Tests    
+
 ### References
 * [Get channel id for private channel](http://stackoverflow.com/a/33862907)
